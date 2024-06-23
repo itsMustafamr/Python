@@ -53,6 +53,21 @@ for line in ball:
             print("new!!!!")
         print(w, di[w])
 
+
+    #best way just use di[w] = dii.get(w, 0) + 1 (all in 1)
+
 print(di[w])
+
+#now to find the most common word
+largest = -1
+for k,v in di.items():
+    print(k, v)
+    if v > largest:
+        largest = v
+        the_largest_word = k
+    else:
+        break
+
+print('Done', the_largest_word, largest)
 
  
