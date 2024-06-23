@@ -33,4 +33,26 @@ print(count.keys())
 for l,m in count.items():
     print(l,"and", m)
 
+
+fname = input("enter file name:")
+if len(fname) < 1 : fname = 'clown.txt'
+ball = open(fname)
+
+di = dict()
+for line in ball:
+    line = line.rstrip()
+    #print(line)
+    words = line.split()
+    #print(words)
+    for w in words:
+        if w in di :
+            di[w] = di[w] + 1
+            print("existing")
+        else:
+            di[w] = 1
+            print("new!!!!")
+        print(w, di[w])
+
+print(di[w])
+
  
