@@ -9,6 +9,10 @@ print("done")
 t = [1,3,6.3,534,31]
 print(t[1:4])
 stuff = list()
-stuff.append("chicken")
+stuff.append(12)
 stuff.append(67)
 print(stuff)
+print(sum(stuff))
+abc = 'chi ma ga'
+still = abc.split()
+print(still)
