@@ -70,4 +70,22 @@ for k,v in di.items():
 
 print('Done', the_largest_word, largest)
 
- 
+x = sorted(di.items())
+print(x)
+
+temp = list()
+for k,v in di.items():
+    newt = (v,k)
+    temp.append(newt)
+
+print('flipped',temp)
+
+temp = sorted(temp)
+print("sorted", temp)
+
+temp = sorted(temp, reverse=True)
+print("Sorted in reverse", temp[:5], "this gives the top 5(upto but not 5)")
+print(" ") 
+for v,k in temp[:3]:
+    print(k,v)
+
