@@ -11,8 +11,8 @@ class PartyAnimal:
    def __del__(self):
      print('I am destructed', self.x)
 
-an = PartyAnimal()
+an = PartyAnimal() #here executes till i am constructed
 an.party()
 an.party()
-an = 42
+an = 42 #here an no longer points to that object so it overides and before that line completes it calls the destructor 
 print('an contains',an)
