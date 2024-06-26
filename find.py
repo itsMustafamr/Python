@@ -1,7 +1,7 @@
 hand = open("email.txt")
 for line in hand:
     line = line.rstrip()
-    if line.find("From") >= 0:
+    if line.find('From') >= 0 :
         print(line)
     else:
         break
